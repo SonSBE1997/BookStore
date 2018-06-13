@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var lsTopHot = (List<Models.EF.Book>)ViewBag.Hot;
+    var lsNews = (List<Models.EF.Book>)ViewBag.New;
+    var lsNormal = (List<Models.EF.Book>)ViewBag.Normal;
+}
+
+@section slide{
+    @{ Html.RenderAction("Slide", "Home");}
+}
+
+@section CustomScript{
+    <script>
+        /////////////////////
+        $('.btnDelete').off('click').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/Cart/Delete',
+                data: { id: $(this).data('id') },
+                dataType: 'json',
+                type: 'POST',
+                success: function (response) {
+                    if (response.status == true) {
+                        window.location.href = "/Home/Index";
+                    }
+                }
+            })
+        });
+    </script>
+}
+
+<!--Sản phẩm bán chạy-->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Sách bán chạy</h2>
+                </div>
+            </div>
+            <!-- section title -->
+            <!-- Product Single -->
+            @for (int i = 0; i < 4; i++)
+            {
+                if (i < lsTopHot.Count)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <a href="/Book/BookDetail?bookID=@lsTopHot.ElementAt(i).ID" target="_self">
+                                <div class="product-thumb" style="height:250px;width:95%">
+                                    <img class="img-responsive lazy-load" data-original="@lsTopHot.ElementAt(i).CoverPhoto" alt="">
+                                </div>
+                            </a>
+                            <div class="product-body">
+                                <h3 class="product-price">@lsTopHot.ElementAt(i).Price VNĐ</h3>
+                                <h2 class="product-name"><a href="/Book/BookDetail?bookID=@lsTopHot.ElementAt(i).ID">@lsTopHot.ElementAt(i).Name</a></h2>
+                                <div class="product-btns" style="width:85%">
+                                    <a href="/Home/AddItem?bookId=@lsTopHot.ElementAt(i).ID&quantity=1" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <a href="/Book/Hot" class="btn btn-danger pull-right" target="_self">Xem tất cả</a>
+    </div>
+</div>
+
+<!--Sách mới-->
+<div class="section" style="padding-top:0px;">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Sách mới</h2>
+                </div>
+            </div>
+            <!-- section title -->
+            <!-- Product Single -->
+            @for (int i = 0; i < 4; i++)
+            {
+                if (i < lsNews.Count)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <a href="/Book/BookDetail?bookID=@lsNews.ElementAt(i).ID" target="_self">
+                                <div class="product-thumb" style="height:250px;width:95%">
+                                    <img class="img-responsive lazy-load" data-original="@lsNews.ElementAt(i).CoverPhoto" a alt="">
+                                </div>
+                            </a>
+                            <div class="product-body">
+                                <h3 class="product-price">@lsNews.ElementAt(i).Price VNĐ</h3>
+                                <h2 class="product-name"><a href="/Book/BookDetail?bookID=@lsNews.ElementAt(i).ID">@lsNews.ElementAt(i).Name</a></h2>
+                                <div class="product-btns" style="width:85%">
+                                    <a href="/Home/AddItem?bookId=@lsNews.ElementAt(i).ID&quantity=1" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <a href="/Book/New" class="btn btn-danger pull-right" target="_self">Xem tất cả</a>
+    </div>
+</div>
+
+<!--Các sách khác-->
+<div class="section" style="padding-top:0px;">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Sản phẩm khác</h2>
+                </div>
+            </div>
+            <!-- section title -->
+            <!-- Product Single -->
+            @for (int i = 0; i < 4; i++)
+            {
+                if (i < lsNormal.Count)
+                {
+                    var book = lsNormal.ElementAt(i);
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <a href="/Book/BookDetail?bookID=@book.ID" target="_self">
+                                <div class="product-thumb" style="height:250px;width:95%">
+                                    <img class="img-responsive lazy-load" data-original="@book.CoverPhoto" alt="">
+                                </div>
+                            </a>
+                            <div class="product-body">
+                                <h3 class="product-price">@book.Price VNĐ</h3>
+                                <h2 class="product-name"><a href="/Book/BookDetail?bookID=@book.ID">@book.Name</a></h2>
+                                <div class="product-btns" style="width:85%">
+                                    <a href="/Home/AddItem?bookId=@book.ID&quantity=1" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <a href="/Book/Index" class="btn btn-danger pull-right" target="_self">Xem tất cả</a>
+    </div>
+</div>
+

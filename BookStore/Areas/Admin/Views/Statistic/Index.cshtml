@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var month = (List<decimal>)ViewBag.Month;
+    var lsYear = (List<decimal>)ViewBag.List;
+    var year = (int)ViewBag.Year;
+}
+
+@section header{
+    Thống kê
+}
+
+<h4>Năm @year</h4>
+<table class="table table-striped table-bordered table-hover">
+    @for (int i = 0; i < month.Count; i++)
+    {
+        var index = i + 1;
+        <tr>
+            <td>Tháng @index</td>
+            <td>@month.ElementAt(i) VNĐ</td>
+            <td>@Html.ActionLink("Xem chi tiết", "ViewDetail/" + +year + "_" + index, "Statistic")</td>
+        </tr>
+    }
+</table>
+<h4>Các năm gần đây</h4>
+<table class="table table-striped table-bordered table-hover">
+
+    @{
+        var year1 = year - 1;
+        var year2 = year + 1;
+    }
+    <tr>
+        <td>Năm @year2</td>
+        <td>@lsYear.ElementAt(2)</td>
+        <td>@Html.ActionLink("Chi tiết", "Index/" + year2, "Statistic") </a></td>
+    </tr>
+
+    <tr>
+        <td>Năm @year</td>
+        <td>@lsYear.ElementAt(1)</td>
+        <td>@Html.ActionLink("Chi tiết", "Index/" + year, "Statistic") </a></td>
+    </tr>
+
+    <tr>
+        <td>Năm @year1</td>
+        <td>@lsYear.ElementAt(0)</td>
+        <td>@Html.ActionLink("Chi tiết", "Index/" + year1, "Statistic") </a></td>
+    </tr>
+</table>

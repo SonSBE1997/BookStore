@@ -1,0 +1,42 @@
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Models.dll.config
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Models.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Models.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\EntityFramework.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\PagedList.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\PagedList.Mvc.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\EntityFramework.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\PagedList.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\PagedList.Mvc.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\obj\Debug\Models.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\obj\Debug\Models.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Microsoft.Data.Edm.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Microsoft.Data.OData.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Microsoft.Owin.Security.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\System.Spatial.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Microsoft.Data.OData.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\System.Spatial.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\Models\bin\Debug\Microsoft.Data.Edm.xml
+E:\Web\BookStore\Models\obj\Debug\Models.csprojAssemblyReference.cache
+E:\Web\BookStore\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+E:\Web\BookStore\Models\obj\Debug\Models.dll
+E:\Web\BookStore\Models\obj\Debug\Models.pdb
+E:\Web\BookStore\Models\bin\Debug\Models.dll.config
+E:\Web\BookStore\Models\bin\Debug\Models.dll
+E:\Web\BookStore\Models\bin\Debug\Models.pdb
+E:\Web\BookStore\Models\bin\Debug\EntityFramework.dll
+E:\Web\BookStore\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Web\BookStore\Models\bin\Debug\Microsoft.Data.OData.dll
+E:\Web\BookStore\Models\bin\Debug\Newtonsoft.Json.dll
+E:\Web\BookStore\Models\bin\Debug\PagedList.dll
+E:\Web\BookStore\Models\bin\Debug\PagedList.Mvc.dll
+E:\Web\BookStore\Models\bin\Debug\Microsoft.Data.Edm.dll
+E:\Web\BookStore\Models\bin\Debug\Microsoft.Owin.Security.dll
+E:\Web\BookStore\Models\bin\Debug\EntityFramework.xml
+E:\Web\BookStore\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Web\BookStore\Models\bin\Debug\PagedList.xml
+E:\Web\BookStore\Models\bin\Debug\PagedList.Mvc.xml
+E:\Web\BookStore\Models\bin\Debug\System.Spatial.xml
+E:\Web\BookStore\Models\obj\Debug\Models.csproj.CopyComplete

@@ -1,0 +1,21 @@
+﻿@model List<Models.EF.Slide>
+@*<div id="home">*@
+    <!-- Slide -->
+    <div class="container">
+        <div class="home-wrap">
+            <!-- home slick -->
+            <div id="home-slick">
+                <!-- banner -->
+                @foreach (var item in Model)
+                {
+                    <div class="banner banner-1">
+                        <img src="@item.Link" alt="">
+                    </div>
+                }
+                <!-- /banner -->
+            </div>
+            <!-- /home slick -->
+        </div>
+        <!-- /home wrap -->
+    </div>
+@*</div>*@

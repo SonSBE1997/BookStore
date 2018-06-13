@@ -1,0 +1,134 @@
+﻿@model List<Models.EF.Book>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var link = "/Book/Hot";
+}
+
+@section CustomScript{
+    <script>
+        /////////////////////
+        $('.btnDelete').off('click').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/Cart/Delete',
+                data: { id: $(this).data('id') },
+                dataType: 'json',
+                type: 'POST',
+                success: function (response) {
+                    if (response.status == true) {
+                        window.location.href = "/Book/Hot";
+                    }
+                }
+            })
+        });
+    </script>
+}
+
+<div id="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">Trang chủ</a></li>
+            <li><a href="/Book/Index">Sách</a></li>
+            <li class="active"><a href="@link" style="color:#88bfc5;">Sách bán chạy</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" style="padding-bottom:30px;">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- MAIN -->
+            <div id="main" class="col-md-12">
+                <!-- store top filter -->
+                <div class="store-filter clearfix">
+                    <div class="pull-right">
+                        <span style="font-size:18px;">Trang:</span>
+                        <ul class="store-pages">
+
+                            @if (ViewBag.PreviousPage > 0)
+                            {
+                                <li><a href="@link?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.PreviousPage"><i class="fa fa-angle-left"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.PreviousPage">@ViewBag.PreviousPage</a></li>
+                            }
+
+                            <li class="active"><a href="@link?page=@ViewBag.CurrentPage" style="color:crimson;">@ViewBag.CurrentPage</a></li>
+
+                            @if (ViewBag.NextPage <= ViewBag.LastPage)
+                            {
+                                <li><a href="@link?page=@ViewBag.NextPage">@ViewBag.NextPage</a></li>
+                                <li><a href="@link?page=@ViewBag.NextPage"><i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.LastPage"><i class="fa fa-angle-double-right"></i></a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <!-- /store top filter -->
+                <!-- STORE -->
+                <div id="store">
+                    <!-- row -->
+                    <div class="row">
+                        <!-- Product Single -->
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            var num1 = Model.ElementAt(i);
+                            if (num1 != null)
+                            {
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="product product-single">
+                                        <a href="/Book/BookDetail?bookID=@num1.ID" target="_self">
+                                            <div class="product-thumb" style="height:250px;width:95%">
+                                                <img class="img-responsive lazy-load" data-original="@num1.CoverPhoto" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="product-body">
+                                            <h3 class="product-price">@num1.Price VNĐ</h3>
+                                            <h2 class="product-name"><a href="/Book/BookDetail?bookID=@num1.ID">@num1.Name</a></h2>
+                                            <div class="product-btns" style="width:85%">
+                                                <a href="/Book/AddItem4?bookId=@num1.ID&quantity=1" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /STORE -->
+                <!-- store bottom filter -->
+                <div class="store-filter clearfix">
+                    <div class="pull-right">
+                        <span style="font-size:18px;">Trang:</span>
+                        <ul class="store-pages">
+
+                            @if (ViewBag.PreviousPage > 0)
+                            {
+                                <li><a href="@link?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.PreviousPage"><i class="fa fa-angle-left"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.PreviousPage">@ViewBag.PreviousPage</a></li>
+                            }
+
+                            <li class="active"><a href="@link?page=@ViewBag.CurrentPage" style="color:crimson;">@ViewBag.CurrentPage</a></li>
+
+                            @if (ViewBag.NextPage <= ViewBag.LastPage)
+                            {
+                                <li><a href="@link?page=@ViewBag.NextPage">@ViewBag.NextPage</a></li>
+                                <li><a href="@link?page=@ViewBag.NextPage"><i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="@link?page=@ViewBag.LastPage"><i class="fa fa-angle-double-right"></i></a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <!-- /store bottom filter -->
+            </div>
+            <!-- /MAIN -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>

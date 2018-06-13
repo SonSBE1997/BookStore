@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Book Store</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="/Assets/Client/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="/Assets/Client/css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="/Assets/Client/css/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="/Assets/Client/css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- header -->
+        <div id="header">
+            <div class="container">
+                <div class="pull-left">
+                    <!-- Logo -->
+                    <div class="header-logo">
+                        <a class="logo" href="/Home/Index">
+                            <h2>Book Store</h2>
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Search -->
+                    <div class="header-search" style="width:350px">
+                        <form>
+                            @{var strSearch = ViewBag.SearchString != null ? ViewBag.SearchString : "";}
+                            <input class="form-control" value="@strSearch" name="searchString" id="searchString" type="text" placeholder="Search" width="200">
+                            <button class="search-btn" id="btnSearch"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- /Search -->
+                </div>
+                <div class="pull-right">
+                    <ul class="header-btns">
+                        <!-- Account -->
+                        <li class="header-account dropdown default-dropdown">
+                            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                                <div class="header-btns-icon">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <strong class="text-uppercase">@{Html.RenderAction("AccountName", "Home");} <i class="fa fa-caret-down"></i></strong>
+                            </div>
+
+                            <ul class="custom-menu">
+                                <li><a href="#"><i class="fa fa-user-o"></i> Tài khoản của tôi</a></li>
+                                <li><a href="/CreateAccount/Index"><i class="fa fa-user-plus"></i> Tạo tài khoản</a></li>
+                                <li><a href="/Login/Index"><i class="fa fa-arrow-circle-left"></i> Đăng nhập</a></li>
+                                <li><a href="/Logout/Index"><i class="fa fa-arrow-circle-right"></i> Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                        <!-- /Account -->
+                        <!-- Cart -->
+                        @{Html.RenderAction("CartHeader", "Home");}
+                        <!-- /Cart -->
+                        <!-- Mobile nav toggle-->
+                        <li class="nav-toggle">
+                            <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+                        </li>
+                        <!-- / Mobile nav toggle -->
+                    </ul>
+                </div>
+            </div>
+            <!-- header -->
+        </div>
+        <!-- container -->
+    </header>
+
+    <!-- /HEADER -->
+    <!-- NAVIGATION -->
+    <div id="navigation">
+        <div class="container">
+            <div id="responsive-nav">
+                <!-- category nav -->
+                <div class="category-nav show-on-click">
+                    <span class="category-header" style="background-color:#325674">Danh mục sách <i class="fa fa-list"></i></span>
+                    <ul class="category-list">
+                        @{ Html.RenderAction("CategoryList", "Home");}
+                    </ul>
+                </div>
+
+                <!-- /category nav -->
+                <!-- menu nav -->
+                @RenderPage("MenuNav.cshtml")
+                <!-- menu nav -->
+            </div>
+        </div>
+    </div>
+    @RenderSection("slide", required: false)
+    <!-- /NAVIGATION -->
+    @RenderBody()
+    <!-- FOOTER -->
+    @RenderPage("_Footer.cshtml")
+    <!-- /FOOTER -->
+    <!-- jQuery Plugins -->
+    <script src="/Assets/Client/js/jquery.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+
+    <script src="/Assets/Client/js/slick.min.js"></script>
+    <script src="/Assets/Client/js/nouislider.min.js"></script>
+    <script src="/Assets/Client/js/jquery.zoom.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script src="/Assets/Client/tuupola-jquery_lazyload-2cfbdb5/jquery.lazyload.min.js"></script>
+
+    @RenderSection("CustomScript", required: false);
+    <script>
+        $('#btnSearch').off('click').on('click', function (e) {
+            e.preventDefault();
+            window.location.href = "/Book/Index?searchString=" + $('#searchString').val();
+        });
+    </script>
+    <script>
+        $(function () {
+            $("img.lazy-load").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+</body>
+</html>

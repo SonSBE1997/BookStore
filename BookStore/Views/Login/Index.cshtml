@@ -1,0 +1,62 @@
+﻿@model BookStore.Areas.Admin.Models.LoginModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomScript{
+    <script>
+        /////////////////////
+        $('.btnDelete').off('click').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/Cart/Delete',
+                data: { id: $(this).data('id') },
+                dataType: 'json',
+                type: 'POST',
+                success: function (response) {
+                    if (response.status == true) {
+                        window.location.href = "/Login/Index";
+                    }
+                }
+            })
+        });
+    </script>
+}
+
+<div class="section" style="padding-bottom:165px">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                <form id="checkout-form" class="clearfix">
+                    <div class="col-md-6">
+                        <div class="billing-details">
+                            <h2>Đăng nhập</h2>
+
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                            <fieldset>
+                                <div class="form-group">
+                                    <label>Tài khoản</label>
+                                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", @autofocus = "autofocus" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Mật khẩu</label>
+                                    @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </form>
+            }
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>

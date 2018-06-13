@@ -1,0 +1,162 @@
+﻿@model PagedList.IPagedList<Models.EF.Book>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Danh mục sách";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var db = (Models.EF.BookStoreDbContext)ViewBag.DBContext;
+}
+
+@section header{
+    Sách
+}
+
+@section jsFooter{
+    <script>
+        $('.btn-hot').off('click').on('click', function (e) {
+            e.preventDefault();
+            var btn = $(this);
+            var id = btn.data('id');
+            $.ajax({
+                url: "/Admin/Book/ChangeHot",
+                data: { id: id },
+                dataType: "json",
+                type: "POST",
+                success: function (response) {
+                    if (response.status == true) {
+                        btn.text('Hot');
+                    }
+                    else {
+                        btn.text('Bình thường');
+                    }
+                }
+            });
+        });
+        ////////////
+        $('.btn-news').off('click').on('click', function (e) {
+            e.preventDefault();
+            var btn = $(this);
+            var id = btn.data('id');
+            $.ajax({
+                url: "/Admin/Book/ChangeNew",
+                data: { id: id },
+                dataType: "json",
+                type: "POST",
+                success: function (response) {
+                    if (response.status == true) {
+                        btn.text('News');
+                    }
+                    else {
+                        btn.text('Bình thường');
+                    }
+                }
+            });
+        });
+        ////////////
+        $('.btn-sale').off('click').on('click', function (e) {
+            e.preventDefault();
+            var btn = $(this);
+            var id = btn.data('id');
+            $.ajax({
+                url: "/Admin/Book/ChangeStatus",
+                data: { id: id },
+                dataType: "json",
+                type: "POST",
+                success: function (response) {
+                    if (response.status == true) {
+                        btn.text('Đang bán');
+                    }
+                    else {
+                        btn.text('Ngừng bán');
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+
+@using (Html.BeginForm("Index", "Book", FormMethod.Get))
+{
+    <div class="col-md-5 col-sm-5 col-xs-12 form-group">
+        <a class="btn btn-success" href="/Admin/Book/Create">Thêm mới</a>
+    </div>
+
+    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+        <div class="input-group">
+            <input type="text" class="form-control" name="searchString" value="@ViewBag.SearchString" placeholder="Search">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-default">Tìm kiếm</button>
+            </span>
+        </div>
+    </div>
+
+}
+
+@foreach (var item in Model)
+{
+    <hr />
+    <div id="@item.ID">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <img class="img-responsive" src="@item.CoverPhoto" alt="...">
+        </div>
+
+        <div class="col-md-5 col-sm-5 col-xs-12" style="border:0px solid #e5e5e5;">
+
+            <h3 class="prod_title">@item.Name</h3>
+            <div><b>Mã sách: </b>@item.Code</div>
+            <div><b>Số lượng: </b>@item.Quantity quyển</div>
+            <div><b>Tác giả: </b>@db.BookAuthors.Find(item.BookAuthor).Name</div>
+            <div><b>Nhà xuất bản: </b>@db.BookPublishers.Find(item.BookPublisher).Name</div>
+            <div><b>Danh mục sách: </b>@db.BookCategories.Find(item.BookCategory).Name</div>
+            <div><b>Mô tả: </b>@item.Description</div>
+            <div><b>Chi tiết:</b><br /> @item.Detail</div>
+            <div>
+                <strong>
+                    Bán chạy:
+                    <a href="#" class="btn-hot" data-id="@item.ID" style="color:orange">
+                        @Html.Raw((bool)item.TopHot ? "Hot" : "Bình thường")
+                    </a>
+                </strong>
+            </div>
+            <div>
+                <strong>
+                    Sản phẩm mới:
+                    <a href="#" class="btn-news" data-id="@item.ID" style="color:orange">
+                        @Html.Raw((bool)item.New ? "News" : "Bình thường")
+                    </a>
+                </strong>
+            </div>
+            <div>
+                <strong>
+                    Tình trạng:
+                    <a href="#" class="btn-sale" data-id="@item.ID" style="color:orange">
+                        @Html.Raw(item.Status ? "Đang bán" : "Ngừng bán")
+                    </a>
+                </strong>
+            </div>
+            <div class="">
+                <div class="product_price">
+                    <h1 class="price">@item.Price VNĐ</h1>
+                </div>
+            </div>
+            <div class="">
+                <a href="/Admin/Book/Edit/@item.ID" class="btn btn-default">Sửa</a>
+                <div class="btn btn-default">
+                    @Ajax.ActionLink("Xoá", "Delete", new { @id = item.ID }, new AjaxOptions
+               {
+                   Confirm = "Bạn có muốn xoá bản ghi này?",
+                   OnComplete = "$('#" + @item.ID + "').remove()",
+                   HttpMethod = "Delete"
+               })
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+}
+<div class="clearfix"></div>
+<hr />
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }))
+

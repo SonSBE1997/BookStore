@@ -1,0 +1,191 @@
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\ApplicationInsights.config
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\csc.exe
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\System.Collections.Immutable.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\vbc.exe
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\VBCSCompiler.exe
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\roslyn\VBCSCompiler.exe.config
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\BookStore.dll.config
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\BookStore.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\BookStore.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Antlr3.Runtime.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\EntityFramework.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\EntityFramework.SqlServer.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.Agent.Intercept.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.DependencyCollector.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.Web.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.WindowsServer.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.ApplicationInsights.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.Core.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Cookies.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Facebook.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Google.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.OAuth.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Twitter.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Web.Infrastructure.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Models.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Newtonsoft.Json.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Owin.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\PagedList.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\PagedList.Mvc.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Helpers.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Mvc.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Optimization.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Razor.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.Deployment.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.Razor.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\WebGrease.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Models.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.DependencyCollector.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.Web.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AI.WindowsServer.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.ApplicationInsights.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\PagedList.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\PagedList.Mvc.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Helpers.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Mvc.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Optimization.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.Razor.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.Deployment.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Web.WebPages.Razor.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Antlr3.Runtime.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\EntityFramework.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\EntityFramework.SqlServer.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.Core.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Facebook.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.OAuth.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Google.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Twitter.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\obj\Debug\BookStore.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\obj\Debug\BookStore.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Data.OData.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Data.Edm.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Spatial.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Newtonsoft.Json.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Owin.Security.Cookies.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\CKFinder.dll
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\CKFinder.pdb
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Data.OData.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\Microsoft.Data.Edm.xml
+D:\D_partition\hoc tap\Web\ASP\Book Store\BookStore\bin\System.Spatial.xml
+E:\Web\BookStore\BookStore\bin\ApplicationInsights.config
+E:\Web\BookStore\BookStore\bin\roslyn\csc.exe
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web\BookStore\BookStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web\BookStore\BookStore\bin\roslyn\System.Collections.Immutable.dll
+E:\Web\BookStore\BookStore\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web\BookStore\BookStore\bin\roslyn\vbc.exe
+E:\Web\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe
+E:\Web\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe.config
+E:\Web\BookStore\BookStore\bin\BookStore.dll.config
+E:\Web\BookStore\BookStore\bin\BookStore.dll
+E:\Web\BookStore\BookStore\bin\BookStore.pdb
+E:\Web\BookStore\BookStore\bin\Antlr3.Runtime.dll
+E:\Web\BookStore\BookStore\bin\CKFinder.dll
+E:\Web\BookStore\BookStore\bin\EntityFramework.dll
+E:\Web\BookStore\BookStore\bin\EntityFramework.SqlServer.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.Web.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.ApplicationInsights.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Data.OData.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Google.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+E:\Web\BookStore\BookStore\bin\Models.dll
+E:\Web\BookStore\BookStore\bin\Newtonsoft.Json.dll
+E:\Web\BookStore\BookStore\bin\Owin.dll
+E:\Web\BookStore\BookStore\bin\PagedList.dll
+E:\Web\BookStore\BookStore\bin\PagedList.Mvc.dll
+E:\Web\BookStore\BookStore\bin\System.Web.Helpers.dll
+E:\Web\BookStore\BookStore\bin\System.Web.Mvc.dll
+E:\Web\BookStore\BookStore\bin\System.Web.Optimization.dll
+E:\Web\BookStore\BookStore\bin\System.Web.Razor.dll
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.dll
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+E:\Web\BookStore\BookStore\bin\WebGrease.dll
+E:\Web\BookStore\BookStore\bin\Microsoft.Data.Edm.dll
+E:\Web\BookStore\BookStore\bin\Models.pdb
+E:\Web\BookStore\BookStore\bin\Models.dll.config
+E:\Web\BookStore\BookStore\bin\CKFinder.pdb
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.Web.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.ApplicationInsights.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web\BookStore\BookStore\bin\PagedList.xml
+E:\Web\BookStore\BookStore\bin\PagedList.Mvc.xml
+E:\Web\BookStore\BookStore\bin\System.Web.Helpers.xml
+E:\Web\BookStore\BookStore\bin\System.Web.Mvc.xml
+E:\Web\BookStore\BookStore\bin\System.Web.Optimization.xml
+E:\Web\BookStore\BookStore\bin\System.Web.Razor.xml
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.xml
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+E:\Web\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+E:\Web\BookStore\BookStore\bin\Antlr3.Runtime.pdb
+E:\Web\BookStore\BookStore\bin\Newtonsoft.Json.xml
+E:\Web\BookStore\BookStore\bin\EntityFramework.xml
+E:\Web\BookStore\BookStore\bin\EntityFramework.SqlServer.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Google.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web\BookStore\BookStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web\BookStore\BookStore\obj\Debug\BookStore.csprojAssemblyReference.cache
+E:\Web\BookStore\BookStore\obj\Debug\BookStore.csproj.CoreCompileInputs.cache
+E:\Web\BookStore\BookStore\obj\Debug\BookStore.csproj.CopyComplete
+E:\Web\BookStore\BookStore\obj\Debug\BookStore.dll
+E:\Web\BookStore\BookStore\obj\Debug\BookStore.pdb
